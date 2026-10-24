@@ -1,0 +1,9 @@
+# Upload allowlist: everything at the top level is left out of a deployment unless named below, so development notes,
+# tests, docs, screenshots and anything added later never leave this folder. The site then serves only dist/,
+# which tools/package.mjs builds from an explicit file list.
+/*
+!tack.html
+!LICENSE
+!vendor
+!tools
+!vercel.json

@@ -1,0 +1,9 @@
+# Text files are stored and checked out with LF line endings on every platform.
+* text=auto eol=lf
+
+# Byte-exact files: the vendored reader and the license are checked against fixed hashes,
+# so Git must never convert their line endings.
+vendor/** -text
+LICENSE -text
+*.png binary
+*.gz binary
